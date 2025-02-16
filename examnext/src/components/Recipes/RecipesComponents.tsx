@@ -7,8 +7,8 @@ export const RecipesComponents = async () => {
   return (
     <div>
       {recipes.map((recipe) => (
-        <div>
-          <Link href = {""}><h2>{recipe.name}</h2></Link>
+        <div key={recipe.id}>
+          <Link href = {recipe.id.toString()}><h2>{recipe.name}</h2></Link>
         </div> 
       ))}
     </div>
